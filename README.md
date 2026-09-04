@@ -1,10 +1,10 @@
 # Honda spectroscopy toolkit
 
 Honda is a small Python library for fitting and processing photoemission,
-NEXAFS, XMCD, and hysteresis data. It is a tested translation of the Igor Pro
-procedures retained at the repository root. The Python API uses explicit NumPy
-arrays and return values; it does not depend on Igor waves, global data folders,
-graph cursors, or GUI panels.
+NEXAFS, XMCD, and hysteresis data. It is a tested translation of an earlier
+Igor Pro toolkit. The Python API uses explicit NumPy arrays and return values;
+it does not depend on Igor waves, global data folders, graph cursors, or GUI
+panels.
 
 ## Install
 

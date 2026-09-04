@@ -2,8 +2,10 @@
 
 The original repository contained one 2006-era Igor Pro toolkit: 27 procedure
 files, one Igor packed experiment (`dicrosimo 5576_bis.pxp`), and an FTP log.
-The packed experiment and every procedure are retained unchanged as historical
-inputs. Runtime code now lives under `src/honda`.
+They were removed from the current tree after the Python translation was
+verified because no runtime code or tests depended on them. They remain
+available in Git history at commit `eeffa7a`. Runtime code lives under
+`src/honda`.
 
 | Legacy source | Python replacement |
 | --- | --- |
@@ -50,7 +52,7 @@ quadratic routines are block-vectorized or call compiled kernels per row, which
 keeps the code inspectable and avoids an unprofiled native extension.
 
 `LoadMacroPhEnTime` at the end of `BearDataNew.ipf` only creates empty output
-waves and stops; the menu calls a separate `DividePhEnTime` function that is not
-present in the repository. No behavior could be translated from that incomplete
-stub. The `.pxp` file is experimental data, not source code, and remains
-available for use from Igor Pro.
+waves and stops; the menu calls a separate `DividePhEnTime` function that was
+not present in the repository. No behavior could be translated from that
+incomplete stub. The removed `.pxp` file was experimental data rather than
+source code.
